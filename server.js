@@ -28,3 +28,6 @@ app.route('/users/:id')
 .delete((req,res)=>{
   // User.findByIdAndDelete()
 })
+
+const User=require('./models/User');
+mongoose.connect('mongodb://localhost/userData')
